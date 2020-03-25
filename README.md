@@ -1,2 +1,2 @@
-# java-notes
-The java notes
+# Java-notes
+The Java notes

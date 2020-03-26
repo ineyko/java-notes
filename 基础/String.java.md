@@ -32,16 +32,16 @@
     这是一个在 Java 堆里的特殊区域，当一个字符串被创建的时候，如果在 String 池里不存在，则创建一个新的字符串并且存储到 String 池；如果 String 池里存在，那么这个对象的 reference 都指向同一个堆地址。
 
     ```java
-    String str1 = "abcd";
-    String str2 = "abcd";
+    String string1 = "abcd";
+    String string2 = "abcd";
     ```
 
     ![java-string-pool](https://github.com/ineyko/java-notes/raw/master/images/java-string-pool.jpeg)
 
-    此处的 `str1` 和 `str2` 虽说是两个不同的 reference，但都指向了同一块堆内存的地址。也就是说：
+    此处的 `string1` 和 `string2` 虽说是两个不同的 reference，但都指向了同一块堆内存的地址。也就是说：
 
     ```java
-    System.out.println(str1 == str2);
+    System.out.println(string1 == string2);
     ```
 
     答案是 true。
